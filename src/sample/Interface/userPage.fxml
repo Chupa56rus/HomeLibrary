@@ -1,24 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #861209;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.UserPageController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="507.0"
+            prefWidth="780.0" style="-fx-background-color: #861209;" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.UserPageController">
     <children>
-        <AnchorPane layoutY="85.0" prefHeight="315.0" prefWidth="700.0" style="-fx-background-color: #FFFFFF;">
+        <AnchorPane layoutY="85.0" prefHeight="422.0" prefWidth="780.0" style="-fx-background-color: #FFFFFF;">
             <children>
-                <Label layoutX="207.0" layoutY="28.0" text="User Page" textFill="#861209">
+                <Label layoutX="240.0" layoutY="22.0" prefHeight="61.0" prefWidth="300.0" text="User Page"
+                       textFill="#861209">
                     <font>
-                        <Font name="Bookman Old Style" size="59.0" />
+                        <Font name="Bookman Old Style" size="59.0"/>
                     </font>
                 </Label>
-                <Label layoutX="276.0" layoutY="108.0" prefHeight="25.0" prefWidth="170.0" textFill="RED" />
+                <Button fx:id="userPageOpenBookListButton" layoutX="48.0" layoutY="196.0" mnemonicParsing="false"
+                        onAction="#userPageOpenBookListButtonAction" text="Open Book List"/>
+                <Label fx:id="UserPageUserDataLabel" layoutX="634.0" layoutY="105.0" prefHeight="31.0" prefWidth="69.0"
+                       text="User Data"/>
+                <Label fx:id="UserPageNameLabel" layoutX="523.0" layoutY="158.0" prefHeight="25.0" prefWidth="51.0"
+                       text="Name"/>
+                <Label fx:id="UserPageTelLabel" layoutX="529.0" layoutY="201.0" text="Tel."/>
+                <Button fx:id="UserPageOpenRecentBooksButton" layoutX="48.0" layoutY="242.0" mnemonicParsing="false"
+                        onAction="#userPageOpenRecentBooksButtonAction" prefHeight="31.0" prefWidth="170.0"
+                        text="Open Recent Books"/>
+                <Button fx:id="UserPageSoonToReadButton" layoutX="48.0" layoutY="282.0" mnemonicParsing="false"
+                        onAction="#userPageSoonToReadButtonAction" text="Soon to Read"/>
+                <TextField fx:id="UserPageNameTextField" editable="false" layoutX="575.0" layoutY="155.0"
+                           onAction="#userPageNameTextFieldAction"/>
+                <TextField fx:id="UserPageTelTextField" editable="false" layoutX="575.0" layoutY="196.0"
+                           onAction="#userPageTelTextFieldAction"/>
+                <Label fx:id="UserPageMyBooksLabel" layoutX="81.0" layoutY="110.0" text="My Books"/>
+                <Button fx:id="UserPageChangeMyDataButton" layoutX="523.0" layoutY="313.0" mnemonicParsing="false"
+                        onAction="#userPageChangeMyDataButtonAction" text="Change My Data"/>
+                <Button fx:id="UserPageSendLetterButton" layoutX="526.0" layoutY="358.0" mnemonicParsing="false"
+                        onAction="#userPageSendLetterButtonAction" text="Send Letter"/>
+                <Button fx:id="UserPageAddNewBookButton" layoutX="48.0" layoutY="155.0" mnemonicParsing="false"
+                        onAction="#userPageAddNewBookButtonAction" prefHeight="31.0" prefWidth="131.0"
+                        text="Add New Book"/>
+                <Button fx:id="UserPageGoToBookTopsButton" layoutX="48.0" layoutY="329.0" mnemonicParsing="false"
+                        onAction="#userPageGoToBookTopsButtonAction" text="Go to Book Tops"/>
             </children>
         </AnchorPane>
         <Label layoutX="243.0" text="Home Library" textFill="WHITE">
             <font>
-                <Font name="Papyrus" size="35.0" />
+                <Font name="Papyrus" size="35.0"/>
             </font>
         </Label>
     </children>
