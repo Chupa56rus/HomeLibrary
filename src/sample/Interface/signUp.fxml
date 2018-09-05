@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #861209;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.signUpController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #861209;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.SignUpController">
     <children>
         <AnchorPane layoutY="85.0" prefHeight="315.0" prefWidth="700.0" style="-fx-background-color: #FFFFFF;">
             <children>
@@ -69,5 +69,10 @@
                 <Font name="Papyrus" size="35.0" />
             </font>
         </Label>
+        <Button fx:id="signUpSignInButton" layoutX="576.0" layoutY="27.0" mnemonicParsing="false" onAction="#signUpSignInButtonAction" prefHeight="32.0" prefWidth="110.0" style="-fx-background-color: #4C051D;" text="Sign In" textFill="#fffafa">
+            <font>
+                <Font name="Rockwell" size="17.0" />
+            </font>
+        </Button>
     </children>
 </AnchorPane>

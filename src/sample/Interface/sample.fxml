@@ -36,7 +36,7 @@
             <Font name="Papyrus" size="35.0" />
          </font>
       </Label>
-      <Button fx:id="signInSignUpButton" layoutX="576.0" layoutY="27.0" mnemonicParsing="false" onAction="#signUpButton" prefHeight="32.0" prefWidth="110.0" style="-fx-background-color: #4C051D;" text="Sign Up" textFill="#fffafa">
+      <Button fx:id="signInSignUpButton" layoutX="576.0" layoutY="27.0" mnemonicParsing="false" onAction="#signInSignUpButtonAction" prefHeight="32.0" prefWidth="110.0" style="-fx-background-color: #4C051D;" text="Sign Up" textFill="#fffafa">
          <font>
             <Font name="Rockwell" size="17.0" />
          </font>
