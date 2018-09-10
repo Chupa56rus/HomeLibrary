@@ -15,4 +15,9 @@ public class SignUpController {
         PageOpener opener = new PageOpener();
         opener.openPage("/sample/Interface/sample.fxml");
     }
+
+    public void signUpCancelButtonAction(ActionEvent actionEvent) {
+        PageOpener opener = new PageOpener();
+        opener.openPage("/sample/Interface/exitWindow.fxml", actionEvent);
+    }
 }

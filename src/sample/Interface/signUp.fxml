@@ -7,78 +7,71 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
-            prefWidth="700.0" style="-fx-background-color: #861209;" xmlns="http://javafx.com/javafx/8.0.121"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.SignUpController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #861209;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.SignUpController">
     <children>
         <AnchorPane layoutY="85.0" prefHeight="315.0" prefWidth="700.0" style="-fx-background-color: #FFFFFF;">
             <children>
-                <PasswordField layoutX="131.0" layoutY="145.0"/>
-                <TextField layoutX="131.0" layoutY="107.0"/>
-                <Button layoutX="220.0" layoutY="255.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0"
-                        text="Sign Up">
+                <PasswordField layoutX="131.0" layoutY="145.0" />
+                <TextField layoutX="131.0" layoutY="107.0" />
+                <Button layoutX="220.0" layoutY="255.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0" text="Sign Up">
                     <font>
-                        <Font name="Rockwell" size="15.0"/>
+                        <Font name="Rockwell" size="15.0" />
                     </font>
                 </Button>
-                <Button layoutX="379.0" layoutY="255.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="82.0"
-                        text="Cancel">
+                <Button fx:id="signUpCancelButton" layoutX="379.0" layoutY="255.0" mnemonicParsing="false" onAction="#signUpCancelButtonAction" prefHeight="28.0" prefWidth="82.0" text="Cancel">
                     <font>
-                        <Font name="Rockwell" size="15.0"/>
+                        <Font name="Rockwell" size="15.0" />
                     </font>
                 </Button>
-                <Label layoutX="206.0" layoutY="14.0" prefHeight="58.0" prefWidth="289.0" text="Registration"
-                       textFill="#861209">
+                <Label layoutX="206.0" layoutY="14.0" prefHeight="58.0" prefWidth="289.0" text="Registration" textFill="#861209">
                     <font>
-                        <Font name="Bookman Old Style" size="47.0"/>
+                        <Font name="Bookman Old Style" size="47.0" />
                     </font>
                 </Label>
-                <TextField layoutX="494.0" layoutY="107.0" prefHeight="25.0" prefWidth="149.0"/>
-                <TextField layoutX="494.0" layoutY="145.0"/>
-                <TextField layoutX="131.0" layoutY="182.0"/>
-                <TextField layoutX="494.0" layoutY="183.0"/>
+                <TextField layoutX="494.0" layoutY="107.0" prefHeight="25.0" prefWidth="149.0" />
+                <TextField layoutX="494.0" layoutY="145.0" />
+                <TextField layoutX="131.0" layoutY="182.0" />
+                <TextField layoutX="494.0" layoutY="183.0" />
                 <Label layoutX="41.0" layoutY="149.0" text="Password*">
                     <font>
-                        <Font name="Bookman Old Style" size="15.0"/>
+                        <Font name="Bookman Old Style" size="15.0" />
                     </font>
                 </Label>
                 <Label layoutX="41.0" layoutY="111.0" text="Login*">
                     <font>
-                        <Font name="Bookman Old Style" size="15.0"/>
+                        <Font name="Bookman Old Style" size="15.0" />
                     </font>
                 </Label>
                 <Label layoutX="41.0" layoutY="186.0" text="Email">
                     <font>
-                        <Font name="Bookman Old Style" size="15.0"/>
+                        <Font name="Bookman Old Style" size="15.0" />
                     </font>
                 </Label>
                 <Label layoutX="378.0" layoutY="111.0" text="Name*">
                     <font>
-                        <Font name="Bookman Old Style" size="15.0"/>
+                        <Font name="Bookman Old Style" size="15.0" />
                     </font>
                 </Label>
                 <Label layoutX="378.0" layoutY="149.0" text="Location">
                     <font>
-                        <Font name="Bookman Old Style" size="15.0"/>
+                        <Font name="Bookman Old Style" size="15.0" />
                     </font>
                 </Label>
                 <Label layoutX="378.0" layoutY="186.0" text="Phone Number">
                     <font>
-                        <Font name="Bookman Old Style" size="15.0"/>
+                        <Font name="Bookman Old Style" size="15.0" />
                     </font>
                 </Label>
             </children>
         </AnchorPane>
         <Label layoutX="243.0" text="Home Library" textFill="WHITE">
             <font>
-                <Font name="Papyrus" size="35.0"/>
+                <Font name="Papyrus" size="35.0" />
             </font>
         </Label>
-        <Button fx:id="signUpSignInButton" layoutX="576.0" layoutY="27.0" mnemonicParsing="false"
-                onAction="#signUpSignInButtonAction" prefHeight="32.0" prefWidth="110.0"
-                style="-fx-background-color: #4C051D;" text="Sign In" textFill="#fffafa">
+        <Button fx:id="signUpSignInButton" layoutX="576.0" layoutY="27.0" mnemonicParsing="false" onAction="#signUpSignInButtonAction" prefHeight="32.0" prefWidth="110.0" style="-fx-background-color: #4C051D;" text="Sign In" textFill="#fffafa">
             <font>
-                <Font name="Rockwell" size="17.0"/>
+                <Font name="Rockwell" size="17.0" />
             </font>
         </Button>
     </children>

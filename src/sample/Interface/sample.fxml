@@ -7,45 +7,38 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
-            prefWidth="700.0" style="-fx-background-color: #861209;" xmlns="http://javafx.com/javafx/8.0.121"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #861209;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.Controller">
     <children>
         <AnchorPane layoutY="85.0" prefHeight="315.0" prefWidth="700.0" style="-fx-background-color: #FFFFFF;">
             <children>
-                <PasswordField fx:id="signInPasswordField" layoutX="276.0" layoutY="170.0" promptText="Password"/>
-                <TextField fx:id="signInLoginField" layoutX="276.0" layoutY="133.0" promptText="Login"/>
-                <Button fx:id="signInSignInButton" layoutX="310.0" layoutY="218.0" mnemonicParsing="false"
-                        onAction="#signInSignInButtonAction" prefHeight="25.0" prefWidth="82.0" text="Sign In">
+                <PasswordField fx:id="signInPasswordField" layoutX="276.0" layoutY="170.0" promptText="Password" />
+                <TextField fx:id="signInLoginField" layoutX="276.0" layoutY="133.0" promptText="Login" />
+                <Button fx:id="signInSignInButton" layoutX="310.0" layoutY="218.0" mnemonicParsing="false" onAction="#signInSignInButtonAction" prefHeight="25.0" prefWidth="82.0" text="Sign In">
                     <font>
-                        <Font name="Rockwell" size="15.0"/>
+                        <Font name="Rockwell" size="15.0" />
                     </font>
                 </Button>
-                <Button fx:id="signInCancelButton" layoutX="309.0" layoutY="255.0" mnemonicParsing="false"
-                        prefHeight="28.0" prefWidth="82.0" text="Cancel">
+                <Button fx:id="signInCancelButton" layoutX="309.0" layoutY="255.0" mnemonicParsing="false" onAction="#signInCancelButtonAction" prefHeight="28.0" prefWidth="82.0" text="Cancel">
                     <font>
-                        <Font name="Rockwell" size="15.0"/>
+                        <Font name="Rockwell" size="15.0" />
                     </font>
                 </Button>
                 <Label layoutX="154.0" layoutY="14.0" text="Authorization" textFill="#861209">
                     <font>
-                        <Font name="Bookman Old Style" size="59.0"/>
+                        <Font name="Bookman Old Style" size="59.0" />
                     </font>
                 </Label>
-                <Label fx:id="singInErrorMessage" layoutX="276.0" layoutY="108.0" prefHeight="25.0" prefWidth="170.0"
-                       textFill="RED"/>
+                <Label fx:id="singInErrorMessage" layoutX="276.0" layoutY="108.0" prefHeight="25.0" prefWidth="170.0" textFill="RED" />
             </children>
         </AnchorPane>
         <Label layoutX="243.0" text="Home Library" textFill="WHITE">
             <font>
-                <Font name="Papyrus" size="35.0"/>
+                <Font name="Papyrus" size="35.0" />
             </font>
         </Label>
-        <Button fx:id="signInSignUpButton" layoutX="576.0" layoutY="27.0" mnemonicParsing="false"
-                onAction="#signInSignUpButtonAction" prefHeight="32.0" prefWidth="110.0"
-                style="-fx-background-color: #4C051D;" text="Sign Up" textFill="#fffafa">
+        <Button fx:id="signInSignUpButton" layoutX="576.0" layoutY="27.0" mnemonicParsing="false" onAction="#signInSignUpButtonAction" prefHeight="32.0" prefWidth="110.0" style="-fx-background-color: #4C051D;" text="Sign Up" textFill="#fffafa">
             <font>
-                <Font name="Rockwell" size="17.0"/>
+                <Font name="Rockwell" size="17.0" />
             </font>
         </Button>
     </children>

@@ -2,14 +2,8 @@ package sample.Controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.stage.Stage;
 import sample.PageOpener;
-
-import java.io.IOException;
 
 
 public class Controller {
@@ -17,6 +11,7 @@ public class Controller {
     @FXML
     public Button signInSignUpButton;
     public Button signInSignInButton;
+    public Button signInCancelButton;
 
     public void signInSignUpButtonAction(ActionEvent actionEvent) {
 
@@ -30,6 +25,11 @@ public class Controller {
         signInSignInButton.getScene().getWindow().hide();
         PageOpener opener = new PageOpener();
         opener.openPage("/sample/Interface/userPage.fxml");
+    }
+
+    public void signInCancelButtonAction(ActionEvent actionEvent) {
+        PageOpener opener = new PageOpener();
+        opener.openPage("/sample/Interface/exitWindow.fxml", actionEvent);
     }
 }
 
