@@ -11,14 +11,14 @@
     <children>
         <AnchorPane layoutY="85.0" prefHeight="315.0" prefWidth="700.0" style="-fx-background-color: #FFFFFF;">
             <children>
-                <PasswordField fx:id="signUpPasswordTextField" layoutX="131.0" layoutY="145.0" />
-                <TextField fx:id="signUpLoginTextField" layoutX="131.0" layoutY="107.0" />
-                <Button fx:id="signUpSignUpButton" layoutX="220.0" layoutY="255.0" mnemonicParsing="false" onAction="#signUpSignUpButtonAction" prefHeight="25.0" prefWidth="82.0" text="Sign Up">
+                <PasswordField fx:id="signUpPasswordTextField" layoutX="131.0" layoutY="145.0" style="-fx-border-color: black; -fx-border-radius: 5;" />
+                <TextField fx:id="signUpLoginTextField" layoutX="131.0" layoutY="107.0" style="-fx-border-color: black; -fx-border-radius: 5;" />
+                <Button fx:id="signUpSignUpButton" layoutX="220.0" layoutY="255.0" mnemonicParsing="false" onAction="#signUpSignUpButtonAction" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #861209;" text="Sign Up" textFill="WHITE">
                     <font>
                         <Font name="Rockwell" size="15.0" />
                     </font>
                 </Button>
-                <Button fx:id="signUpCancelButton" layoutX="379.0" layoutY="255.0" mnemonicParsing="false" onAction="#signUpCancelButtonAction" prefHeight="28.0" prefWidth="82.0" text="Cancel">
+                <Button fx:id="signUpCancelButton" layoutX="379.0" layoutY="255.0" mnemonicParsing="false" onAction="#signUpCancelButtonAction" prefHeight="28.0" prefWidth="82.0" style="-fx-background-color: #861209;" text="Cancel" textFill="WHITE">
                     <font>
                         <Font name="Rockwell" size="15.0" />
                     </font>
@@ -28,16 +28,16 @@
                         <Font name="Bookman Old Style" size="47.0" />
                     </font>
                 </Label>
-                <TextField fx:id="signUpNameTextField" layoutX="494.0" layoutY="107.0" prefHeight="25.0" prefWidth="149.0" />
-                <TextField fx:id="signUpLocationTextField" layoutX="494.0" layoutY="145.0" />
-                <TextField fx:id="signUpEmailTextField" layoutX="131.0" layoutY="182.0" />
-                <TextField fx:id="signUpPhoneNumberTextField" layoutX="494.0" layoutY="183.0" />
-                <Label layoutX="41.0" layoutY="149.0" text="Password*">
+                <TextField fx:id="signUpNameTextField" layoutX="494.0" layoutY="107.0" prefHeight="25.0" prefWidth="149.0" style="-fx-border-color: black; -fx-border-radius: 5;" />
+                <TextField fx:id="signUpLocationTextField" layoutX="494.0" layoutY="145.0" style="-fx-border-color: black; -fx-border-radius: 5;" />
+                <TextField fx:id="signUpEmailTextField" layoutX="131.0" layoutY="182.0" style="-fx-border-color: black; -fx-border-radius: 5;" />
+                <TextField fx:id="signUpPhoneNumberTextField" layoutX="494.0" layoutY="183.0" style="-fx-border-color: black; -fx-border-radius: 5;" />
+                <Label fx:id="signUpPasswordLabel" layoutX="41.0" layoutY="149.0" text="Password*">
                     <font>
                         <Font name="Bookman Old Style" size="15.0" />
                     </font>
                 </Label>
-                <Label layoutX="41.0" layoutY="111.0" text="Login*">
+                <Label fx:id="signUpLoginLabel" layoutX="41.0" layoutY="111.0" text="Login*">
                     <font>
                         <Font name="Bookman Old Style" size="15.0" />
                     </font>
@@ -47,7 +47,7 @@
                         <Font name="Bookman Old Style" size="15.0" />
                     </font>
                 </Label>
-                <Label layoutX="378.0" layoutY="111.0" text="Name*">
+                <Label fx:id="signUpNameLabel" layoutX="378.0" layoutY="111.0" text="Name*">
                     <font>
                         <Font name="Bookman Old Style" size="15.0" />
                     </font>
