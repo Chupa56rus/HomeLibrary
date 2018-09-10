@@ -5,11 +5,17 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import sample.sql.DataBaseConnection;
+
+import java.sql.*;
 
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
+        DataBaseConnection db = new DataBaseConnection();
+        db.createTables();
+
         Parent root = FXMLLoader.load(getClass().getResource("Interface/sample.fxml"));
         primaryStage.setTitle("Home Library");
         primaryStage.setScene(new Scene(root, 700, 400));
@@ -17,7 +23,7 @@ public class Main extends Application {
     }
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException, SQLException {
         launch(args);
     }
 }
