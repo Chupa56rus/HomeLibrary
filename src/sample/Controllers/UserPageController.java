@@ -14,6 +14,9 @@ import java.io.IOException;
 
 public class UserPageController {
 
+    @FXML
+    public Button userPageOpenBookListButton;
+    public Button UserPageGoToBookTopsButton;
 
     public void userPageOpenBookListButtonAction(ActionEvent actionEvent) {
     }
@@ -40,5 +43,8 @@ public class UserPageController {
     }
 
     public void userPageGoToBookTopsButtonAction(ActionEvent actionEvent) {
+        UserPageGoToBookTopsButton.getScene().getWindow().hide();
+        PageOpener opener = new PageOpener();
+        opener.openPage("/sample/Interface/topsBooksPage.fxml");
     }
 }

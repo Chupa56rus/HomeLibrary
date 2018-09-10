@@ -50,6 +50,4 @@ public class PageOpener {
         stage.setScene(new Scene(root));
         stage.show();
     }
-
-
 }
