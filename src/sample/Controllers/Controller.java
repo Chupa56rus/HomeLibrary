@@ -21,7 +21,6 @@ public class Controller {
     }
 
     public void signInSignInButtonAction(ActionEvent actionEvent) {
-
         signInSignInButton.getScene().getWindow().hide();
         PageOpener opener = new PageOpener();
         opener.openPage("/sample/Interface/userPage.fxml");
