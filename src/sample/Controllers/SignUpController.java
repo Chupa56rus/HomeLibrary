@@ -6,7 +6,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import sample.PageOpener;
+
 import java.sql.*;
+
 import sample.sql.DataBaseConnection;
 
 public class SignUpController {
@@ -15,6 +17,11 @@ public class SignUpController {
     public Button signUpSignInButton;
     public PasswordField signUpPasswordTextField;
     public TextField signUpLoginTextField;
+    public TextField signUpNameTextField;
+    public TextField signUpLocationTextField;
+    public TextField signUpEmailTextField;
+    public TextField signUpPhoneNumberTextField;
+    public Button signUpSignUpButton;
 
     public void signUpSignInButtonAction(ActionEvent actionEvent) {
         signUpSignInButton.getScene().getWindow().hide();
@@ -31,15 +38,19 @@ public class SignUpController {
 
         String login = signUpLoginTextField.getText();
         String password = signUpPasswordTextField.getText();
+        String name = signUpNameTextField.getText();
+        String location = signUpLocationTextField.getText();
+        String email = signUpEmailTextField.getText();
+        String phonenumber = signUpPhoneNumberTextField.getText();
 
         DataBaseConnection con = new DataBaseConnection();
         Class.forName("com.mysql.jdbc.Driver");
         try (Connection connection = DriverManager.getConnection(DataBaseConnection.getUrl(), DataBaseConnection.getUsername(), DataBaseConnection.getPassword());
              Statement statement = connection.createStatement()) {
-            statement.executeUpdate("INSERT INTO lib.t_users" +
-                    "(`idt_user_id`,`f_user_username`,`f_user_password`)" +
+            statement.executeUpdate("INSERT INTO `homelib`.`t_users` " +
+                    "(`f_user_id`,`f_user_username`,`f_user_name`,`f_user_password`,`f_user_location`,`f_user_email`,`f_user_phonenumber`) " +
                     "VALUES " +
-                    "(default, '" + login + "', '" + password + "');");
+                    "(default, '" + login + "', '" + name + "', '" + password + "', '" + location + "', '" + email + "', '" + phonenumber + "');");
         }
     }
 }

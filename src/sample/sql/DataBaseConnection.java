@@ -37,7 +37,8 @@ public class DataBaseConnection {
         try (Connection connection = DriverManager.getConnection(con.url, con.username, con.password);
              Statement statement = connection.createStatement()) {
             statement.executeUpdate("create database if not exists homelib;");
-            statement.executeUpdate("CREATE TABLE if not exists homelib.t_users (f_user_id int(11) NOT NULL AUTO_INCREMENT," +
+            statement.executeUpdate("CREATE TABLE if not exists homelib.t_users " +
+                    "(f_user_id int(11) NOT NULL AUTO_INCREMENT," +
                     " f_user_username varchar(45) NOT NULL," +
                     " f_user_name varchar(45) NOT NULL," +
                     " f_user_password varchar(45) NOT NULL," +

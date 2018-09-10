@@ -13,7 +13,7 @@
             <children>
                 <PasswordField fx:id="signUpPasswordTextField" layoutX="131.0" layoutY="145.0" />
                 <TextField fx:id="signUpLoginTextField" layoutX="131.0" layoutY="107.0" />
-                <Button layoutX="220.0" layoutY="255.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0" text="Sign Up">
+                <Button fx:id="signUpSignUpButton" layoutX="220.0" layoutY="255.0" mnemonicParsing="false" onAction="#signUpSignUpButtonAction" prefHeight="25.0" prefWidth="82.0" text="Sign Up">
                     <font>
                         <Font name="Rockwell" size="15.0" />
                     </font>
@@ -28,10 +28,10 @@
                         <Font name="Bookman Old Style" size="47.0" />
                     </font>
                 </Label>
-                <TextField layoutX="494.0" layoutY="107.0" prefHeight="25.0" prefWidth="149.0" />
-                <TextField layoutX="494.0" layoutY="145.0" />
-                <TextField layoutX="131.0" layoutY="182.0" />
-                <TextField layoutX="494.0" layoutY="183.0" />
+                <TextField fx:id="signUpNameTextField" layoutX="494.0" layoutY="107.0" prefHeight="25.0" prefWidth="149.0" />
+                <TextField fx:id="signUpLocationTextField" layoutX="494.0" layoutY="145.0" />
+                <TextField fx:id="signUpEmailTextField" layoutX="131.0" layoutY="182.0" />
+                <TextField fx:id="signUpPhoneNumberTextField" layoutX="494.0" layoutY="183.0" />
                 <Label layoutX="41.0" layoutY="149.0" text="Password*">
                     <font>
                         <Font name="Bookman Old Style" size="15.0" />
