@@ -11,8 +11,8 @@
     <children>
         <AnchorPane layoutY="85.0" prefHeight="315.0" prefWidth="700.0" style="-fx-background-color: #FFFFFF;">
             <children>
-                <PasswordField layoutX="131.0" layoutY="145.0" />
-                <TextField layoutX="131.0" layoutY="107.0" />
+                <PasswordField fx:id="signUpPasswordTextField" layoutX="131.0" layoutY="145.0" />
+                <TextField fx:id="signUpLoginTextField" layoutX="131.0" layoutY="107.0" />
                 <Button layoutX="220.0" layoutY="255.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0" text="Sign Up">
                     <font>
                         <Font name="Rockwell" size="15.0" />
