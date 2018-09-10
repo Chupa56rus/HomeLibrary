@@ -52,5 +52,9 @@ public class SignUpController {
                     "VALUES " +
                     "(default, '" + login + "', '" + name + "', '" + password + "', '" + location + "', '" + email + "', '" + phonenumber + "');");
         }
+
+        signUpSignUpButton.getScene().getWindow().hide();
+        PageOpener opener = new PageOpener();
+        opener.openPage("/sample/Interface/UserPage.fxml", actionEvent);
     }
 }
