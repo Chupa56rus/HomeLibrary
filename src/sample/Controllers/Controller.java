@@ -16,12 +16,20 @@ public class Controller {
 
     @FXML
     public Button signInSignUpButton;
+    public Button signInSignInButton;
 
     public void signInSignUpButtonAction(ActionEvent actionEvent) {
 
         signInSignUpButton.getScene().getWindow().hide();
         PageOpener opener = new PageOpener();
         opener.openPage("/sample/Interface/signUp.fxml");
+    }
+
+    public void signInSignInButtonAction(ActionEvent actionEvent) {
+
+        signInSignInButton.getScene().getWindow().hide();
+        PageOpener opener = new PageOpener();
+        opener.openPage("/sample/Interface/userPage.fxml");
     }
 }
 
