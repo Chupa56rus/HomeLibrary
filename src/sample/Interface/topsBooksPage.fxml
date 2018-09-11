@@ -12,7 +12,10 @@
         <AnchorPane layoutY="85.0" prefHeight="315.0" prefWidth="700.0" style="-fx-background-color: #FFFFFF;">
          <children>
             <ChoiceBox layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="199.0" />
-            <Button fx:id="TopsBooksBackButton" layoutX="56.0" layoutY="260.0" mnemonicParsing="false" onAction="#TopsBooksBackButtonAction" text="Back on User Page" />
+            <Button fx:id="TopsBooksBackButton" layoutX="40.0" layoutY="260.0" mnemonicParsing="false" onAction="#TopsBooksBackButtonAction" style="-fx-background-color: #861209;" text="Back on User Page" textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="15.0" />
+               </font></Button>
             <ListView layoutX="250.0" layoutY="14.0" prefHeight="283.0" prefWidth="419.0" />
          </children>
         </AnchorPane>
