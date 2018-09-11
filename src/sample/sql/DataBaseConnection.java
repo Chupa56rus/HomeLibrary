@@ -5,7 +5,8 @@ import java.sql.*;
 public class DataBaseConnection {
 
     private static String username = "root";
-    private static String password = "berupe57";
+    //private static String password = "berupe57";
+    private static String password = "1q2w3e4r!Q@W#E$R";
     private static String url = "jdbc:mysql://localhost:3306/mysql";
 
     public static String getUrl() {
