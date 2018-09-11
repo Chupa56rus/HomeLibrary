@@ -28,7 +28,7 @@
                         <Font name="Bookman Old Style" size="59.0" />
                     </font>
                 </Label>
-                <Label fx:id="singInErrorMessage" layoutX="276.0" layoutY="108.0" prefHeight="25.0" prefWidth="170.0" textFill="RED" />
+                <Label fx:id="signInErrorMessage" layoutX="276.0" layoutY="108.0" prefHeight="25.0" prefWidth="189.0" text="Incorrect login or password" textFill="RED" visible="false" />
             </children>
         </AnchorPane>
         <Label layoutX="243.0" text="Home Library" textFill="WHITE">
