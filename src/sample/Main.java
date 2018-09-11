@@ -17,7 +17,9 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("Interface/sample.fxml"));
         primaryStage.setTitle("Home Library");
         primaryStage.setResizable(false);
-        primaryStage.setScene(new Scene(root, 700, 400));
+        Scene scene = new Scene(root, 700, 400);
+        scene.getStylesheets().add(0, "sample/Styles/MyStyle.css");
+        primaryStage.setScene(scene);
         primaryStage.show();
     }
 

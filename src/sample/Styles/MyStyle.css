@@ -1,0 +1,13 @@
+.button{
+    -fx-background-color:  #861209;
+    -fx-font-size: 15 pt;
+    -fx-font-family: "Rockwell";
+    -fx-text-fill: white;
+}
+
+.top-button{
+    -fx-background-color:   #4C051D;
+    -fx-font-size: 17 pt;
+    -fx-font-family: "Rockwell";
+    -fx-text-fill: white;
+}
