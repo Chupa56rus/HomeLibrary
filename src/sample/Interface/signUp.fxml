@@ -23,9 +23,9 @@
                         <Font name="Rockwell" size="15.0" />
                     </font>
                 </Button>
-                <Label layoutX="206.0" layoutY="14.0" prefHeight="58.0" prefWidth="289.0" text="Registration" textFill="#861209">
+                <Label layoutX="194.0" layoutY="14.0" prefHeight="60.0" prefWidth="301.0" text="Registration" textFill="#861209">
                     <font>
-                        <Font name="Bookman Old Style" size="47.0" />
+                        <Font name="Bookman Old Style" size="50.0" />
                     </font>
                 </Label>
                 <TextField fx:id="signUpNameTextField" layoutX="494.0" layoutY="107.0" prefHeight="25.0" prefWidth="149.0" style="-fx-border-color: black; -fx-border-radius: 5;" />
@@ -69,10 +69,7 @@
                 <Font name="Papyrus" size="35.0" />
             </font>
         </Label>
-        <Button fx:id="signUpSignInButton" layoutX="576.0" layoutY="27.0" mnemonicParsing="false" onAction="#signUpSignInButtonAction" prefHeight="32.0" prefWidth="110.0" style="-fx-background-color: #4C051D;" text="Sign In" textFill="#fffafa">
-            <font>
-                <Font name="Rockwell" size="17.0" />
-            </font>
+        <Button fx:id="signUpSignInButton" layoutX="576.0" layoutY="27.0" mnemonicParsing="false" onAction="#signUpSignInButtonAction" prefHeight="32.0" prefWidth="110.0" styleClass="top-button" text="Sign In">
         </Button>
     </children>
 </AnchorPane>

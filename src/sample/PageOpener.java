@@ -26,7 +26,9 @@ public class PageOpener {
         Stage stage = new Stage();
         stage.setTitle("Home Library");
         stage.setResizable(false);
-        stage.setScene(new Scene(root));
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add(0, "sample/Styles/MyStyle.css");
+        stage.setScene(scene);
         stage.show();
     }
 
@@ -47,7 +49,9 @@ public class PageOpener {
         stage.setResizable(false);
         stage.initModality(Modality.WINDOW_MODAL);
         stage.initOwner(((Node)actionEvent.getSource()).getScene().getWindow());
-        stage.setScene(new Scene(root));
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add(0, "sample/Styles/MyStyle.css");
+        stage.setScene(scene);
         stage.show();
     }
 }
